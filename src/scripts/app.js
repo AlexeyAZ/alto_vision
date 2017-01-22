@@ -39,11 +39,15 @@ $(function() {
 
 			var slide = $(".gallery__slide").eq(i);
 			var img = slide.find(".gallery__slide-img");
+			var descLink = slide.find(".gallery__slide-description-link");
+			var descText = slide.find(".gallery__slide-description-text");
 
 			var navItem = $(".gallery__nav-item").eq(i);
 			var navLink = navItem.find(".gallery__nav-link");
 
 			img.css("background-image", "url(" + data[i].img + ")");
+			descLink.text(data[i].title);
+			descText.text(data[i].subtitle);
 
 			navItem.attr("data-slide", i);
 			navLink.text(data[i].title);
@@ -68,6 +72,9 @@ $(function() {
 			onInit: function(swiper) {
 				setActiveGalleryItem(swiper);
 			},
+			onTransitionStart: function(swiper) {
+				$(".gallery__slide_description_show").removeClass("gallery__slide_description_show");
+			},
 			onTransitionEnd: function(swiper) {
 				setActiveGalleryItem(swiper);
 			},
@@ -79,8 +86,9 @@ $(function() {
 	function setActiveGalleryItem(swiper) {
 		$(".gallery__nav-item_active").removeClass("gallery__nav-item_active");
 		$(".gallery__nav-item").eq(swiper.activeIndex).addClass("gallery__nav-item_active");
-	};
 
+		$(".gallery__slide").eq(swiper.activeIndex).addClass("gallery__slide_description_show");
+	};
 
 	// обработчик клика по элементу навигации галереи
 	body.on("click", ".gallery__nav-item", function() {
