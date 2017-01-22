@@ -70,6 +70,18 @@
 			height: $gallery-container-height-l;
 		}
 
+		&__slide-description {
+			width: $gallery-slide-description-width-l;
+		}
+
+		&__slide-description-link {
+			font-size: 14px;
+		}
+
+		&__slide-description-text {
+			font-size: 10px;
+		}
+
 		&__nav-list {
 			display: flex;
 			justify-content: center;

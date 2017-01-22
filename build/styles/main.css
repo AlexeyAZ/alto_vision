@@ -2798,6 +2798,12 @@ body {
       display: none; }
   .gallery__container {
     height: 280px; }
+  .gallery__slide-description {
+    width: 150px; }
+  .gallery__slide-description-link {
+    font-size: 14px; }
+  .gallery__slide-description-text {
+    font-size: 10px; }
   .gallery__nav-list {
     display: -ms-flexbox;
     display: flex;
