@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Main</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+      <symbol id="logo" x="0px" y="0px" viewBox="0 0 51 51" style="enable-background:new 0 0 51 51;" xml:space="preserve">
+      	<g id="XMLID_14_">
+      		<path id="XMLID_24_" class="st0" d="M20,8H8v12h12V8z M16,16h-4v-4h4V16z"/>
+      		<path id="XMLID_36_" class="st0" d="M0,0v51h51V0H0z M23,46H5V28h18V46z M23,23H5V5h18V23z M46,46H28V28h18V46z M46,18h-5v5h-8v-5h-5v-8h5V5h8v5h5V18z"/>
+      		<polygon id="XMLID_40_" class="st0" points="18,45 22,41 18,37 14,41 	"/>
+      		<polygon id="XMLID_41_" class="st0" points="22,33 18,29 14,33 18,37 	"/>
+      		<polygon id="XMLID_42_" class="st0" points="10,45 14,41 10,37 6,41 	"/>
+      		<polygon id="XMLID_43_" class="st0" points="10,29 6,33 10,37 14,33 	"/>
+      		<path id="XMLID_46_" class="st0" d="M37,44c3.9,0,7-3.1,7-7c0-3.9-3.1-7-7-7s-7,3.1-7,7C30,40.9,33.1,44,37,44z M37,34c1.7,0,3,1.3,3,3c0,1.7-1.3,3-3,3c-1.7,0-3-1.3-3-3C34,35.3,35.3,34,37,34z"/>
+      	</g>
+      </symbol>
+    </svg></svg>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__menu-btn">
+          <div class="header__menu-icon"></div>
+        </div>
+        <div class="header__item header__item_nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="">Мы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="">Портфолио</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="header__item header__item_logo"><a class="header__logo-link" href="#">
+            <svg class="header__logo">
+              <use xlink:href="#logo"></use>
+            </svg></a></div>
+        <div class="header__item header__item_social">
+          <ul class="header__language-list">
+            <li class="header__language-item"><a class="header__language-link header__language-link_active" href="">ру</a></li>
+            <li class="header__language-item"><a class="header__language-link" href="">en</a></li>
+          </ul>
+          <ul class="header__socials-list">
+            <li class="header__socials-item"><a class="header__socials-link header__socials-link_hh" href="">hh</a></li>
+            <li class="header__socials-item"><a class="header__socials-link" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="header__socials-item"><a class="header__socials-link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="header__socials-item"><a class="header__socials-link" href=""><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+            <li class="header__socials-item"><a class="header__socials-link" href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+            <li class="header__socials-item"><a class="header__socials-link" href="">R</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="intro">
+        <div class="intro__video-wrap">
+          <video class="intro__video" autoplay loop poster="img/intro-bg.jpg">
+            <source src="video/main_intro.mov" type="video/mp4">
+          </video>
+        </div>
+        <div class="container intro__container">
+          <p class="intro__title">Мы любим делать сайты, приложения,<br> фирменные стили.</p>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery__container">
+          <div class="swiper-wrapper gallery__wrapper"></div>
+        </div>
+        <div class="container gallery__nav">
+          <ul class="gallery__nav-list"></ul>
+        </div>
+        <div id="gallerySlideTemplate" style="display:none">
+          <div class="swiper-slide gallery__slide">
+            <div class="gallery__slide-img"></div>
+          </div>
+        </div>
+        <div id="galleryNavListTemplate" style="display:none">
+          <li class="gallery__nav-item"><a class="gallery__nav-link"></a></li>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container footer__container">
+          <p class="footer__copyright">© 2017 Alto Vision</p>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

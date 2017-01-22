@@ -1,0 +1,24 @@
+@import "font-awesome/font-awesome";
+
+@font-face {
+    font-family: "PFSquareThin";
+    src: url("../fonts/PFSquareSans/pfsquaresans-thin.eot");
+    src: url("../fonts/PFSquareSans/pfsquaresans-thin.eot?#iefix")format("embedded-opentype"),
+    url('../fonts/PFSquareSans/pfsquaresans-thin.woff2') format('woff2'),
+    url("../fonts/PFSquareSans/pfsquaresans-thin.woff") format("woff"),
+    url("../fonts/PFSquareSans/pfsquaresans-thin.ttf") format("truetype"),
+    url('../fonts/PFSquareSans/pfsquaresans-thin.svg#svgFontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSansReg";
+    src: url("../fonts/PTSansReg/ptsansregular.eot");
+    src: url("../fonts/PTSansReg/ptsansregular.eot?#iefix")format("embedded-opentype"),
+    url('../fonts/PTSansReg/ptsansregular.woff2') format('woff2'),
+    url("../fonts/PTSansReg/ptsansregular.woff") format("woff"),
+    url("../fonts/PTSansReg/ptsansregular.ttf") format("truetype"),
+    url('../fonts/PTSansReg/ptsansregular.svg#svgFontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}

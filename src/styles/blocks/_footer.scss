@@ -1,0 +1,20 @@
+.footer {
+	background-color: black;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: $footer-container-height;
+	}
+
+	&__copyright {
+		color: $footer-copyright;
+		text-align: center;
+	}
+}

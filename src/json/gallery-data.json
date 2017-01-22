@@ -1,0 +1,23 @@
+[
+	{
+		"title": "ICL Services",
+		"subtitle": "Сайт IT-компании",
+		"img": "img/gallery-icl.png"
+	},
+	{
+		"title": "Street Story store",
+		"subtitle": "Интернет-магазин casual одежды известных брендов",
+		"img": "img/gallery-street-story.jpg"
+	},
+	{
+		"title": "Одиндевять",
+		"subtitle": "Сайт гимназии",
+		"img": "img/gallery-one-nine.jpg"
+	},
+	{
+		"title": "Тридом",
+		"subtitle": "Сайт строительной компании",
+		"img": "img/gallery-threehouse.jpg"
+	}
+
+]

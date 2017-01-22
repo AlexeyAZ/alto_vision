@@ -1,0 +1,24 @@
+extends templates/layout
+
+block vars
+    - var title = 'Main'
+
+block content
+    div.intro
+        div.intro__video-wrap
+            video.intro__video(autoplay loop poster="img/intro-bg.jpg")
+                source(src="video/main_intro.mov" type="video/mp4")
+        div.container.intro__container
+            p.intro__title.
+                Мы любим делать сайты, приложения,<br> фирменные стили.
+    div.gallery
+        div.gallery__container
+            div.swiper-wrapper.gallery__wrapper
+        div.container.gallery__nav
+            ul.gallery__nav-list
+        div#gallerySlideTemplate(style="display:none")
+            div.swiper-slide.gallery__slide
+                div.gallery__slide-img
+        div#galleryNavListTemplate(style="display:none")
+            li.gallery__nav-item
+                a.gallery__nav-link

@@ -1,0 +1,138 @@
+.gallery {
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin-top: $intro-height-xl;
+	margin-bottom: $footer-container-height;
+	padding-top: 60px;
+	position: relative;
+	z-index: 2;
+
+	&__container {
+		padding-bottom: 60px;
+		height: $gallery-container-height-xl;
+	}
+
+	&__slide {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80%;
+	}
+
+	&__slide-img {
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__btn {
+		background-image: none;
+		top: 0;
+		margin-top: 0;
+		height: 100%;
+		width: 230px;
+
+		&_prev {
+			left: 0;
+		}
+
+		&_next {
+			right: 0;
+		}
+	}
+
+	&__nav {
+		border-top: 1px solid $main-red;
+		margin-bottom: 30px;
+	}
+
+	&__nav-list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__nav-item {
+		cursor: pointer;
+		padding: 10px;
+		position: relative;
+
+		&:before {
+			transition: 0.3s ease;
+			content: "";
+			background-color: $main-red;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 0;
+			width: 100%;
+		}
+
+		&:hover {
+
+			&:before {
+				height: 100%;
+			}
+
+			.gallery__nav-link {
+				border-color: white;
+				color: white;
+			}
+		}
+
+		&_active {
+
+			&:before {
+				height: 100%;
+			}
+
+			.gallery__nav-link {
+				border-color: white;
+				color: white;
+			}
+		}
+	}
+
+	&__nav-link {
+		transition: 0.3s ease;
+		border-bottom: 1px dashed black;
+		font-size: 14px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.swiper-container-3d {
+
+		.swiper-slide-shadow-right, .swiper-slide-shadow-left {
+    		background-image: none;
+
+			&:before {
+				transition: 0.3s;
+				content: "";
+				background-color: rgba(0,0,0,0.1);
+				box-shadow: 0 0 30px rgba(0,0,0,0.3);
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+			
+		}
+
+		.swiper-slide-next, .swiper-slide-prev {
+			&:hover {
+				cursor: pointer;
+				.swiper-slide-shadow-right, .swiper-slide-shadow-left {
+					&:before {
+						background-color: rgba(0,0,0,0.01);
+						box-shadow: 0 0 10px rgba(0,0,0,0.1);
+					}
+				}
+			}
+		}
+	}
+}
